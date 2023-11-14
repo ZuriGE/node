@@ -1,5 +1,5 @@
 {
-  "name": "node",
+  "name": "proyecto_node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,9 +7,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "writefile": "^0.2.8"
-  },
-  "devDependencies": {}
+  "license": "ISC"
 }
