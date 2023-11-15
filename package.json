@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "fs.promises": "^0.1.2",
     "writefile": "^0.2.8"
-  },
-  "devDependencies": {}
+  }
 }
