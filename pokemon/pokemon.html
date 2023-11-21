@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Pokedex</title>
+		<link rel="icon" type="image/vnd.microsoft.icon" href="./img/pokeball.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;800&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<header class="intro" id="header">
+			<form class="form">
+				<input type="text" id="searchInput" placeholder="Choose your starter" />
+				<button id="btnSearch" class="btn-search">
+					<img class="btnImg" src="./img/pokeball.png" alt="" />
+				</button>
+			</form>
+			<img src="./img/oak.webp" alt="" id="oak" />
+		</header>
+		<main>
+			<div class="cont--ext">
+				<div class="cont--name"><h2 id="pokemonName"></h2></div>
+				<div class="cont--img"><img src="" alt="" id="pokemonImg" /></div>
+				<div class="cont--type"><ul id="typeList"></ul></div>
+				<div class="cont--ab">
+					<h3 id="abTitle"></h3>
+					<ul id="abilityList"></ul>
+				</div>
+			</div>
+		</main>
+		<script src="./pokemon.js"></script>
+	</body>
+</html>

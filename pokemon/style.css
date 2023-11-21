@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'PocketMonk';
+    src: url('./img/PocketMonk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./img/bg.jpg");
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    width: 100vw;
+    height: 3.5rem;
+    background-color: #233664;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.form {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input {
+    height: 1.5rem;
+    padding: 0 0.8rem;
+    background-color: #bbb;
+    border: none;
+    outline: none;
+}
+
+.form input:focus,
+.form input:active {
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+
+
+.btnImg,
+.btn-search {
+    height: 3.5rem;
+    width: 3.5rem;
+    transition: ease-in-out transform 0.8s;
+    cursor: pointer;
+}
+
+.btn-search {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.btnImg:hover {
+    transform: rotate(360deg);
+}
+
+main {
+
+    width: 100%;
+    height: calc(100vh-60px);
+}
+
+.cont--ext {
+    width: 50%;
+    background-color: #dddddd;
+    box-shadow: 0px 12px 20px 6px;
+
+}
+
+
+.cont--name,
+.cont--img,
+.cont--type,
+.cont--ab {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem
+}
+
+.cont--ab {
+    flex-direction: column;
+    padding: 1rem;
+
+    align-items: center;
+}
+
+
+h2 {
+    font-family: 'PocketMonk';
+    -webkit-text-stroke: 1.5px #395aa7;
+    /* width and color */
+    font-size: 5rem;
+    color: #ffcc01;
+    text-shadow: 3px 3px 0px #233664, -2px -2px 2px #bbb;
+    letter-spacing: 0.1em;
+    padding: 1.5rem 0 0.5rem
+}
+
+
+#typeList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+    padding-top: 0.8rem
+}
+
+#typeList li {
+    width: clamp(25%, 30%, 90%);
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+}
+
+#pokemonImg {
+
+    width: 40%;
+
+
+}
+
+#pokemonImg:hover {
+    animation: shake 0.5s;
+
+}
+
+#abilityList {
+    display: flex;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    justify-content: space-between;
+}
+
+#abilityList li {
+    padding: 0.5rem 2rem 0;
+    font-size: 1.2rem;
+}
+
+.intro {
+    height: 100vh;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+#oak {
+    position: absolute;
+    left: 50%;
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+@media(max-width:1100px) {
+    #oak {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .cont--ext {
+        width: 70%
+    }
+
+    #typeList {
+        justify-content: space-evenly;
+    }
+
+    #typeList li img {
+        transform: scale(0.8);
+    }
+}
+
+
+@media(max-width:650px) {
+    .cont--ext {
+        width: 90%;
+        box-shadow: none;
+
+    }
+
+    h2 {
+        font-size: 3.8rem;
+    }
+
+    body {
+        width: auto;
+    }
+
+    .header {
+        width: 100vw;
+    }
+
+
+}
+
+@media(max-width:450px) {
+    #oak {
+        width: 80vw;
+    }
+
+    .intro {
+        width: 100vw;
+    }
+}
